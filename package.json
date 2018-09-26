@@ -1,0 +1,23 @@
+{
+  "name": "fancy.css",
+  "version": "1.0.0",
+  "description": "just a simple css library ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node_modules/node-sass/bin/node-sass -w scss/ -o ./ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igornfaustino/fancy.css.git"
+  },
+  "author": "igornfaustino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igornfaustino/fancy.css/issues"
+  },
+  "homepage": "https://github.com/igornfaustino/fancy.css#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
