@@ -18,12 +18,13 @@ Now you are ready to go. Just type your scss code inside the `scss` folder, and 
 
 This project uses the follow struct
 
-```
+```bash
 root/
-   - fancy.css # main compiled file
-   - scss/
-        - fancy.scss # main scss file (import everything here)
-        - base/
+   - src/
+       - fancy.css # main compiled file
+       - scss/
+            - fancy.scss # main scss file (import everything here)
+            - base/
 ```
 
 ### css structure
