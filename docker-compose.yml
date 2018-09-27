@@ -1,7 +1,21 @@
 version: "2"
 
 services:
-  fancy:
-    build: .
+  scss-compile:
+    image: "node:8"
+    working_dir: /home/fancy/
+    environment:
+      - NODE_ENV=development
     volumes:
-      - .:/fancy/
+      - .:/home/fancy/
+    command: bash -c "npm i --quiet --silent && npm run sass"
+  web-server:
+    image: "node:8"
+    working_dir: /home/fancy/
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/home/fancy/
+    ports:
+      - "8080:8080"
+    command: bash -c "npm i --quiet --silent && npm run server"
