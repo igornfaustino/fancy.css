@@ -12,7 +12,7 @@ To start the compiler just type:
 $ docker-compose up
 ```
 
-Now you are ready to go. Just type your scss code inside the `scss` folder, and everything will be compiled into the fancy.css file.
+Now you are ready to go to [http://localhost:8080](http://localhost:8080). Just type your scss code inside the `scss` folder, and everything will be compiled into the fancy.css file.
 
 ### folder structure
 
