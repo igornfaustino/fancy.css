@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/igornfaustino/fancy.css#readme",
   "devDependencies": {
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.1",
     "node-sass": "^4.9.3"
   },
   "dependencies": {
