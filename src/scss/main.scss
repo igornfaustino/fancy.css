@@ -4,9 +4,12 @@
 
 @import "base/animations";
 @import "base/base";
+@import "base/colors";
 @import "base/typography";
 @import "base/_utilities.scss";
 
 @import "layout/grid";
+@import "layout/header";
+@import "layout/logo";
 
 @import "components/nav/nav";

@@ -10,29 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-.header {
-  background: $nav-background-color;
-  text-align: center;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 999;
-}
-
-.logo {
-  height: 40px;
-  padding: 15px 30px;
-  font-size: 3.6rem;
-  color: #444;
-  line-height: 40px;
-  font-family: 'Courgette', cursive;
-  grid-column: 3 / 4;
-}
-
-.nav-column {
-  display: flex;
-  flex-direction:column;
-}
 .left {
   float: left;
 }
@@ -41,49 +18,9 @@ html {
   float: right;
 }
 
-.icons {
-  display: flex;
-  font-size: 26px;
-  justify-content: flex-start;
-  grid-column: 1 / 4;
-}
-
-.div-icons {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: $nav-background-color;
-  padding: 10px 0px 10px;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 960px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
 .at-the-end {
   -ms-flex-pack:end!important;
   justify-content:flex-end!important
-}
-
-@media screen and (min-width: 800px) {
-  .header {
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
-  }
-
-  .logo {
-      grid-column: 1;
-  }
-  .icons {
-      display: flex;
-      font-size: 26px;
-      justify-content: flex-start;
-      align-items: center;
-      padding-top: 21px;
-  }
 }
 
 @media screen and (max-width: 1279px) {
