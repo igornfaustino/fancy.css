@@ -1,15 +1,14 @@
 .header {
-  background: $nav-background-color;
   text-align: center;
   position: fixed;
-  top: 0px;
+  top: 0rem;
   width: 100%;
   z-index: 999;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 80rem) {
   .header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+    grid-template-columns: 1fr auto minmax(60rem, 1fr) 1fr;
   }
 }

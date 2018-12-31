@@ -6,37 +6,6 @@
 html {
   font-size: 62.5%; }
 
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.at-the-end {
-  -ms-flex-pack: end !important;
-  justify-content: flex-end !important; }
-
-@media screen and (max-width: 1279px) {
-  .background-body {
-    background: url("gold.jpg");
-    max-height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: auto;
-    -moz-background-size: cover;
-    -o-background-size: cover; } }
-
-@media screen and (min-width: 1280px) {
-  .background-body {
-    background: url("gold.jpg");
-    max-height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover; } }
-
-section {
-  position: relative;
-  top: 70px; }
-
 .primary {
   color: #0288d1; }
 
@@ -929,7 +898,17 @@ body {
   padding-top: 2rem; }
 
 .content {
-  padding: 30px; }
+  padding: 3rem; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.at-the-end {
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important; }
 
 .row {
   max-width: 114rem;
@@ -958,35 +937,21 @@ body {
     width: calc( ((100% - 3 * 6rem) / 4) * 3 + 6rem * 2); }
 
 .header {
-  background: #c3a038c8;
   text-align: center;
   position: fixed;
-  top: 0px;
+  top: 0rem;
   width: 100%;
   z-index: 999; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 80rem) {
   .header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr; } }
-
-.logo {
-  height: 40px;
-  padding: 15px 30px;
-  font-size: 3.6rem;
-  color: #444;
-  line-height: 40px;
-  font-family: "Courgette", cursive;
-  grid-column: 3 / 4; }
-
-@media screen and (min-width: 800px) {
-  .logo {
-    grid-column: 1; } }
+    grid-template-columns: 1fr auto minmax(60rem, 1fr) 1fr; } }
 
 nav {
   color: #fff;
   height: 100%;
-  line-height: 70px;
+  line-height: 7rem;
   display: block; }
 
 nav
@@ -1023,7 +988,7 @@ a {
   font-size: 1.2rem;
   color: #fff;
   display: block;
-  padding: 0 25px;
+  padding: 0 2.5rem;
   cursor: pointer; }
 
 nav
@@ -1037,4 +1002,38 @@ a {
   flex-direction: column; }
 
 .dividers-v {
-  border-bottom: 1px solid #828282d4; }
+  border-bottom: .1rem solid #828282d4; }
+
+@media screen and (max-width: 79rem) {
+  .background-body {
+    background: url("gold.jpg");
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: auto;
+    -moz-background-size: cover;
+    -o-background-size: cover; } }
+
+@media screen and (min-width: 80rem) {
+  .background-body {
+    background: url("gold.jpg");
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+section {
+  position: relative;
+  top: 7rem; }
+
+.logo {
+  height: 4rem;
+  padding: 1.5rem 3rem;
+  font-size: 3.6rem;
+  color: #444;
+  line-height: 4rem;
+  font-family: "Courgette", cursive;
+  grid-column: 3 / 4; }
+
+@media screen and (min-width: 80rem) {
+  .logo {
+    grid-column: 2; } }
