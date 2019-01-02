@@ -50,3 +50,20 @@
 .u-padding-top-sm {
   padding-top: 2rem;
 }
+
+.content {
+  padding: 3rem;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.at-the-end {
+  -ms-flex-pack:end!important;
+  justify-content:flex-end!important
+}

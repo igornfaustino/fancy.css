@@ -1,0 +1,216 @@
+//Basic Colors
+$colors-primary: (
+    primary: #0288d1,
+    secundary: #616161,
+    success: #388e3c,
+    danger: #c62828,
+    warning: #ffd600,
+    info: #0097a7,
+    black: #000000,
+    white: #FFFFFF
+);
+
+//Secundary Colors
+$colors-secundary: (
+    red:(
+        1:#c62828,
+        2:#d32f2f,
+        3:#f44336,
+        4:#ef5350,
+        5:#e57373,
+        6:#ef9a9a,
+        7:#ffcdd2,
+    ),
+    rose:(
+        1:#AD1457,
+        2:#C2185B,
+        3:#E91E63,
+        4:#EC407A,
+        5:#F06292,
+        6:#F48FB1,
+        7:#F8BBD0,
+    ),
+    purple:(
+        1:#6A1B9A,
+        2:#7B1FA2,
+        3:#9C27B0,
+        4:#AB47BC,
+        5:#BA68C8,
+        6:#CE93D8,
+        7:#E1BEE7,
+    ),
+    deep-purple:(
+        1:#4527A0,
+        2:#512DA8,
+        3:#673AB7,
+        4:#7E57C2,
+        5:#9575CD,
+        6:#B39DDB,
+        7:#D1C4E9,
+    ),
+    indigo:(
+        1:#283593,
+        2:#303F9F,
+        3:#3F51B5,
+        4:#5C6BC0,
+        5:#7986CB,
+        6:#9FA8DA,
+        7:#C5CAE9,
+    ),
+    blue:(
+        1:#1565C0,
+        2:#1976D2,
+        3:#2196F3,
+        4:#42A5F5,
+        5:#64B5F6,
+        6:#90CAF9,
+        7:#BBDEFB,
+    ),
+    light-blue:(
+        1:#0277BD,
+        2:#0288D1,
+        3:#2196F3,
+        4:#29B6F6,
+        5:#4FC3F7,
+        6:#81D4FA,
+        7:#B3E5FC,
+    ),
+    ciano:(
+        1:#00838F,
+        2:#0097A7,
+        3:#00BCD4,
+        4:#26C6DA,
+        5:#4DD0E1,
+        6:#80DEEA,
+        7:#B2EBF2,
+    ),
+    cerceta:(
+        1:#00695C,
+        2:#00796B,
+        3:#009688,
+        4:#26A69A,
+        5:#4DB6AC,
+        6:#80CBC4,
+        7:#B2DFDB,
+    ),
+    green:(
+        1:#2E7D32,
+        2:#388E3C,
+        3:#4CAF50,
+        4:#66BB6A,
+        5:#81C784,
+        6:#A5D6A7,
+        7:#C8E6C9,
+    ),
+    light-green:(
+        1:#558B2F,
+        2:#689F38,
+        3:#8BC34A,
+        4:#9CCC65,
+        5:#AED581,
+        6:#C5E1A5,
+        7:#DCEDC8,
+    ),
+    lime:(
+        1:#9E9D24,
+        2:#AFB42B,
+        3:#CDDC39,
+        4:#D4E157,
+        5:#DCE775,
+        6:#E6EE9C,
+        7:#F0F4C3,
+    ),
+    yellow:(
+        1:#F9A825,
+        2:#FBC02D,
+        3:#FFEB3B,
+        4:#FFEE58,
+        5:#FFF176,
+        6:#FFF59D,
+        7:#FFF9C4,
+    ),
+    amber:(
+        1:#FF8F00,
+        2:#FFA000,
+        3:#FFC107,
+        4:#FFCA28,
+        5:#FFD54F,
+        6:#FFE082,
+        7:#FFECB3,
+    ),
+    orange:(
+        1:#EF6C00,
+        2:#F57C00,
+        3:#FF9800,
+        4:#FFA726,
+        5:#FFB74D,
+        6:#FFCC80,
+        7:#FFE0B2,
+    ),
+    deep-orange:(
+        1:#D84315,
+        2:#E64A19,
+        3:#FF5722,
+        4:#FF7043,
+        5:#FF8A65,
+        6:#FFAB91,
+        7:#FFCCBC,
+    ),
+    brown:(
+        1:#4E342E,
+        2:#5D4037,
+        3:#795548,
+        4:#8D6E63,
+        5:#A1887F,
+        6:#BCAAA4,
+        7:#D7CCC8,
+    ),
+    gray:(
+        1:#424242,
+        2:#616161,
+        3:#9E9E9E,
+        4:#BDBDBD,
+        5:#E0E0E0,
+        6:#EEEEEE,
+        7:#F5F5F5,
+    ),
+    blue-gray:(
+        1:#37474F,
+        2:#455A64,
+        3:#607D8B,
+        4:#78909C,
+        5:#90A4AE,
+        6:#B0BEC5,
+        7:#CFD8DC,
+    ),
+);
+
+@each $name, $color in $colors-primary {
+    .#{$name} {
+        color: $color;
+    }
+}
+
+@each $name, $color in $colors-primary {
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}
+
+@each $name, $color in $colors-secundary {
+    @for $i from 1 through 7{
+        $value: map-get($color, $i);
+          .#{$name}-#{$i} {
+              color: $value;
+        }
+    }
+}
+
+@each $name, $color in $colors-secundary {
+    @for $i from 1 through 7{
+        $value: map-get($color, $i);
+          .bg-#{$name}-#{$i} {
+              background-color: $value;
+        }
+    }
+}

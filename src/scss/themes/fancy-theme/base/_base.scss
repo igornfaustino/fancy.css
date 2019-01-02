@@ -1,0 +1,25 @@
+@media screen and (max-width: 79rem) {
+    .background-body {
+      background: url('gold.jpg');
+      max-height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: auto;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
+}  
+
+@media screen and (min-width: 80rem) {
+  .background-body {
+      background: url('gold.jpg');
+      max-height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+}
+
+section {
+  position: relative;
+  top: 7rem;
+}
