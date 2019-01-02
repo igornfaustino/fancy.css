@@ -1,14 +1,14 @@
 .header {
-  text-align: center;
-  position: fixed;
-  top: 0rem;
   width: 100%;
   z-index: 999;
-}
 
-@media screen and (min-width: 80rem) {
-  .header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(60rem, 1fr) 1fr;
+  &--fixed-top {
+    top: 0rem;
+    position: fixed;
+  }
+
+  &--fixed-bottom {
+    position: fixed;
+    bottom: 0rem;
   }
 }
