@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node_modules/node-sass/bin/node-sass src/scss/main.scss ./src/fancy.css -w --recursive",
+    "local-sass": "node_modules/node-sass/bin/node-sass src/themes/fancy-theme/main.scss ./src/fancy-theme.css -w --recursive",
     "server": "./node_modules/live-server/live-server.js src/ --no-browser"
   },
   "repository": {

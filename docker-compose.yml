@@ -1,7 +1,7 @@
 version: "2"
 
 services:
-  scss-compile:
+  scss-compile-fancy:
     image: "node:8"
     working_dir: /home/fancy/
     environment:
@@ -9,6 +9,14 @@ services:
     volumes:
       - .:/home/fancy/
     command: bash -c "npm i --quiet --silent && npm run sass"
+  scss-compile-theme:
+    image: "node:8"
+    working_dir: /home/fancy/
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/home/fancy/
+    command: bash -c "npm i --quiet --silent && npm run local-sass"
   web-server:
     image: "node:8"
     working_dir: /home/fancy/

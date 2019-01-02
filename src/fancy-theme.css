@@ -1,0 +1,34 @@
+@media screen and (max-width: 79rem) {
+  .background-body {
+    background: url("gold.jpg");
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: auto;
+    -moz-background-size: cover;
+    -o-background-size: cover; } }
+
+@media screen and (min-width: 80rem) {
+  .background-body {
+    background: url("gold.jpg");
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+section {
+  position: relative;
+  top: 7rem; }
+
+.logo {
+  height: 4rem;
+  padding: 1.5rem 3rem;
+  font-size: 3.6rem;
+  color: #444;
+  line-height: 4rem;
+  font-family: "Courgette", cursive;
+  grid-column: 3 / 4;
+  display: inline; }
+
+@media screen and (min-width: 80rem) {
+  .logo {
+    grid-column: 2; } }
