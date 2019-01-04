@@ -8,7 +8,8 @@
 @import "base/typography";
 @import "base/_utilities.scss";
 
+@import "components/button";
+@import "components/nav";
+
 @import "layout/grid";
 @import "layout/header";
-
-@import "components/nav/nav";
