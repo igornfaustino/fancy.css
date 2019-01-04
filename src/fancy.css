@@ -1,3 +1,16 @@
+.zoom-image {
+  transition: all 1.5s ease; }
+
+.zoom-image:hover {
+  overflow: hidden;
+  transform: scale(1.3); }
+
+.hover-translateY {
+  transition: 4.5s ease; }
+
+.hover-translateY:hover {
+  transform: translateY(-1.4rem); }
+
 * {
   box-sizing: inherit;
   margin: 0;
@@ -977,7 +990,7 @@ body {
   border-bottom: 0.1rem solid #828282d4; }
 
 .card {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.14), 0 0.3rem 0.1rem -0.2rem rgba(0, 0, 0, 0.12), 0 0.1rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   position: relative;
   margin: 0.5rem 0 1rem 1rem;
   background-color: #fff;
@@ -990,36 +1003,37 @@ body {
   .card .small {
     max-height: 60%;
     overflow: hidden; }
+  .card .card-image {
+    position: relative; }
   .card .card-image img {
     display: block;
-    border-radius: 2px 2px 0 0;
+    border-radius: 0.2rem 0.2rem 0 0;
     position: relative;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    vertical-align: middle;
     overflow: hidden;
     width: 100%; }
   .card .card-image .card-title {
     color: #fff;
     position: absolute;
-    bottom: 0;
+    bottom: -1.5rem;
     left: 0;
-    padding: 24px; }
+    max-width: 100%;
+    padding: 1.9rem; }
   .card .card-image + .card-content {
     max-height: 40%; }
   .card .card-title {
-    font-size: 2rem;
-    font-weight: 300;
-    display: block; }
+    font-size: 2.4rem;
+    font-weight: 300; }
   .card .card-content {
     padding: 2.4rem;
     border-radius: 0 0 0.2rem 0.2rem; }
     .card .card-content .card-title {
       display: block;
-      line-height: 32px;
-      margin-bottom: 8px; }
+      line-height: 3.2rem;
+      margin-bottom: 0.8rem; }
 
 .small {
   width: 27rem; }

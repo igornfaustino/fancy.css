@@ -1,0 +1,16 @@
+.zoom-image {
+  transition: all 1.5s ease;
+}
+
+.zoom-image:hover {
+  overflow: hidden;
+  transform: scale(1.3);
+}
+
+.hover-translateY {
+    transition: 4.5s ease;
+}
+
+.hover-translateY:hover {
+    transform: translateY(-1.4rem);
+}
