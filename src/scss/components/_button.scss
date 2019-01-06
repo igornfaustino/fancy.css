@@ -1,0 +1,55 @@
+.button {
+  &:link,
+  &:active,
+  &:focus,
+  &[type="submit"] {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    color: $text-dark;
+  }
+
+  padding: 1rem 2rem;
+  
+  &--sm {
+    padding: 0.5rem 2rem;
+  }
+
+  &--lg {
+    padding: 1.5rem 4rem;
+  }
+
+  &:not(:disabled) {
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      color: $text-darker;
+    }
+    
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  font-size: 1.6rem;
+
+  &--white {
+    background-color: #fff;
+    // color: $text-color-dark;
+    transition: all 1s;
+  }
+
+  &--animated {
+    animation: moveInBottom 1s ease-out;
+  }
+}
