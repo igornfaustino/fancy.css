@@ -10,30 +10,42 @@
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
   border-radius: 0.3rem;
   overflow: hidden;
-
-  .small {
+  
+  &--sm {
+    width: 27rem;
     max-height: 60%;
     overflow: hidden;
   }
-
-  .card-image {
-    position: relative;
+  
+  &--md {
+    width: 35rem;
+  }
+  
+  &--lg {
+    width: 45rem;
   }
 
-  .card-image img {
-    display: block;
-    border-radius: 0.2rem 0.2rem 0 0;
+  &__image {
     position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
+    max-height: 60%;
     width: 100%;
-  }
+    overflow: hidden;
 
-  .card-image {
-    .card-title {
+    img {
+      display: block;
+      border-radius: 0.2rem 0.2rem 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    &--title {
+      font-size: 2.4rem;
+      font-weight: 300;
       color: #fff;
       position: absolute;
       bottom: -1.5rem;
@@ -43,41 +55,16 @@
     }
   }
 
-  .card-image + .card-content {
-    max-height: 40%;
-  }
-
-  .card-title {
-    font-size: 2.4rem;
-    font-weight: 300;
-  }
-
-  .card-content {
+  &__content {
     padding: 2.4rem;
     border-radius: 0 0 0.2rem 0.2rem;
 
-    .card-title {
+    &--title {
+      font-size: 2.4rem;
+      font-weight: 300;
       display: block;
       line-height: 3.2rem;
       margin-bottom: 0.8rem;
     }
   }
-}
-
-.small {
-  width: 27rem;
-}
-
-.medium {
-  width: 35rem;
-}
-
-.large {
-  width: 45rem;
-}
-
-.card-image {
-  max-height: 60%;
-  width: 100%;
-  overflow: hidden;
 }
